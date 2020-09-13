@@ -28,7 +28,7 @@ header h1 {
     padding: 10px 10px 10px 80px;
     background-color: var(--light-blue);
     font-weight: bold;
-    font-size: 36px;
+    font-size: 42px;
     margin: 15px 0;
 }
 
@@ -54,7 +54,7 @@ header nav ul {
 header nav ul li a {
     margin: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 24px;
     color: var(--light-blue);
     border-bottom: 3px solid var(--light-blue);
 }
@@ -80,4 +80,39 @@ header nav ul li a {
     background-color: var(--light-blue);
     font-size: 2vw;
     padding: 10px;
+}
+
+.title-styling {
+    color: var(--dark-blue);
+    font-size: 32px;
+}
+
+.about-me, .work {
+    display: flex;
+    margin: 20px;
+}
+
+.about-me-title, .work-title {
+    flex: 1;
+}
+
+.about-me-title h2, .work-title h2 {
+    text-align: right;
+    padding: 15px 20px;
+}
+
+.about-me-text {
+    flex: 3;
+    padding: 15px 30px;
+    border-left: 3px solid var(--dark-blue);
+}
+
+.work-grid-wrapper {
+    flex: 3;
+}
+
+.work-grid-container {
+    padding: 15px 30px;
+    border-left: 3px solid var(--dark-blue);
+
 }
