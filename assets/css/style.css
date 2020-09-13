@@ -107,12 +107,52 @@ header nav ul li a {
     border-left: 3px solid var(--dark-blue);
 }
 
-.work-grid-wrapper {
-    flex: 3;
-}
-
 .work-grid-container {
+    flex: 3;
     padding: 15px 30px;
     border-left: 3px solid var(--dark-blue);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+}
 
+.work-grid-item {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-size: cover;
+    border: 7px solid var(--light-blue);
+    justify-content: flex-end;
+    background-image: url(../images/placeholder.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.work-grid-item.main-item {
+    height: 415px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-image: url(../images/run-buddy.png);
+    background-size: cover;
+    background-position: top;
+     
+}
+
+.grid-text-main {
+    background-color: #7eb6d4;
+    color: var(--dark-blue);   
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--light-blue);
+}
+
+.grid-text {
+    background-color: #7eb6d4;
+    color: var(--dark-blue);   
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid var(--light-blue);
+    font-size: 12px;
 }
