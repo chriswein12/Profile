@@ -1,3 +1,4 @@
+/* CSS for overall page */
 :root {
     --dark-blue: rgb(0, 50, 83);
     --light-blue: #7eb6d4;
@@ -15,7 +16,8 @@ background-color: var(--blue-gray);
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {;
+/* Header Section */
+header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -29,8 +31,6 @@ header h1 {
     font-size: 42px;
     margin: 15px 0;
 }
-
-
 
 header a {
     text-decoration: none;
@@ -87,6 +87,7 @@ header nav ul li a:hover {
     padding: 10px;
 }
 
+/* CSS for all sections*/
 .all-sections {
     display: flex;
     flex-direction: column;
@@ -111,12 +112,14 @@ header nav ul li a:hover {
     padding: 15px 20px;
 }
 
+/* About Me */
 .about-me-text {
     flex: 3;
     padding: 15px 30px;
     border-left: 3px solid var(--dark-blue);
 }
 
+/* Work Section */
 .work-grid-container {
     flex: 3;
     padding: 15px 30px;
@@ -175,6 +178,8 @@ header nav ul li a:hover {
     font-size: 12px;
 }
 
+
+/* Contact Section */
 .contact-links {
     flex: 3;
     padding: 15px 30px;
@@ -198,7 +203,7 @@ header nav ul li a:hover {
     border-bottom: 3px solid #ffffff;
 }
 
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
 
     header nav {
@@ -267,3 +272,5 @@ header nav ul li a:hover {
         font-size: 20px;
         margin: 10px;
     }
+
+}
