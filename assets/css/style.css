@@ -87,16 +87,16 @@ header nav ul li a {
     font-size: 32px;
 }
 
-.about-me, .work {
+.about-me, .work, .contact-me {
     display: flex;
     margin: 20px;
 }
 
-.about-me-title, .work-title {
+.about-me-title, .work-title, .contact-title {
     flex: 1;
 }
 
-.about-me-title h2, .work-title h2 {
+.about-me-title h2, .work-title h2, .contact-title h2 {
     text-align: right;
     padding: 15px 20px;
 }
@@ -156,3 +156,23 @@ header nav ul li a {
     border: 2px solid var(--light-blue);
     font-size: 12px;
 }
+
+.contact-links {
+    flex: 3;
+    padding: 15px 30px;
+    border-left: 3px solid var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-links a {
+    text-decoration: none;
+    margin: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    color: var(--dark-blue);
+    border-bottom: 3px solid var(--dark-blue);
+}
+
+
