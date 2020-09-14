@@ -201,50 +201,69 @@ header nav ul li a:hover {
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
 
-header nav {
-    margin: 15px auto;
-    
+    header nav {
+        margin: 15px auto;
+        
+    }
+
+    .hero{
+        height: 250px;
+        justify-content: flex-start;
+    }
+
+    .hero-subtitle {
+        margin: 20px 0;
+    }
+        
+    .about-me, .work, .contact-me {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .about-me-title h2, .work-title h2, .contact-title h2 {
+        text-align: center;
+        padding: 0 20px 15px 20px;
+        margin: 0 25%;
+        font-size: 30px;
+        border-bottom: 3px solid var(--dark-blue);
+    }
+
+    .about-me-text {
+        margin: 15px 30px;
+        padding: 0;
+        border-left: 0;
+    }
+
+    .work-grid-container {
+        border-left: 0px solid var(--dark-blue);
+    }
+
+    .contact-links {
+        border-left: 0px solid var(--dark-blue);
+    }
+
+    .contact-links a {
+        font-size: 2.0vw;
+        border-bottom: 1.5px solid var(--dark-blue);
+    }
+
 }
 
-.hero{
-    height: 250px;
-    justify-content: flex-start;
-}
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
 
-.hero-subtitle {
-    margin: 20px 0;
-}
-    
-.about-me, .work, .contact-me {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
+    .work-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
-.about-me-title h2, .work-title h2, .contact-title h2 {
-    text-align: center;
-    padding: 0 20px 15px 20px;
-    margin: 0 25%;
-    font-size: 30px;
-    border-bottom: 3px solid var(--dark-blue);
-}
 
-.about-me-text {
-    margin: 15px 30px;
-    padding: 0;
-    border-left: 0;
-}
+    .contact-links {
+        flex-direction: column;
+    }
 
-.work-grid-container {
-    border-left: 0px solid var(--dark-blue);
-}
-
-.contact-links {
-    border-left: 0px solid var(--dark-blue);
-}
-
-.contact-links a {
-    font-size: 2.0vw;
-    border-bottom: 1.5px solid var(--dark-blue);
-}
-
+    .contact-links a {
+        font-size: 20px;
+        margin: 10px;
+    }
