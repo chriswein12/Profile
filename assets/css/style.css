@@ -149,9 +149,13 @@ header nav ul li a:hover {
 
 .work-grid-item.main-item {
     height: 415px;
-    background-image: url(../images/run-buddy.png);
+    background-image: url(../images/cryptocalc-screenshot.png);
     background-size: cover;
     background-position: top;     
+}
+
+.run-buddy {
+background-image: url(../images/run-buddy.png);
 }
 
 .work-grid-container a {
